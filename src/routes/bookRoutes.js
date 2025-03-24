@@ -12,7 +12,7 @@ async function setupRoutes(db){
     router.get('/books', bookController.getAllBooks);
 
     // update a book
-    router.put('/books/:title', bookController.updateBook);
+    router.patch('/books/:title', bookController.updateBook);
 
     // Delete a book
     router.delete('/books/:title', bookController.deleteBook);
